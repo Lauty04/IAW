@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(71, 69, 69);;
+    background-color: rgb(119, 107, 93);
 
 }
 header {
-    background-color: #000000;
+    background-color: rgb(235, 227, 213);
     height: 100px;
-    color: rgb(73, 178, 204);
+    color: black;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
     text-align: center;
     padding-top: 25px;
@@ -16,7 +16,7 @@ header {
     
 }
 .practicas {
-    background-color: #ffffff;
+    background-color: rgb(243, 238, 234);
     width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -26,19 +26,19 @@ input {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #9b9797;
+    border: 1px solid black;
     border-radius: 4px;
 }
 
 input[type="submit"] {
-    background-color: #333;
-    color: white;
+    background-color: rgb(71, 69, 69);
+    color: rgb(243, 238, 234);
 }
 
 .pehpe{
     line-height: 2.5em;
-    background-color: white;
-    border: 3px solid #9b9797;
+    background-color: rgb(243, 238, 234);
+    border: 3px solid black;
     border-radius: 4px;
     padding: 20px;
     font-size:medium;
