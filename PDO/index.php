@@ -20,7 +20,8 @@
     <?php
     $stmt = $conn->prepare("SELECT `id_paciente`,`nombre`,`apellido1`,`apellido2`,`f_nacimiento`,`cod_post`,`telf_contacto`,enfermedades.nombre_enfermedad,genero.sexo FROM `paciente` 
     JOIN enfermedades ON paciente.cod_enfermedad=enfermedades.codigo
-    JOIN genero ON paciente.id_genero=genero.id_genero");
+    JOIN genero ON paciente.id_genero=genero.id_genero
+    ORDER BY paciente.id_paciente");
     $stmt->execute();
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 

@@ -87,8 +87,8 @@
                     </td>
                     <td><input type="text" name="fecha" placeholder="AAAA-MM-DD" value=<?php echo $pf_nacimiento; ?>>
                     </td>
-                    <td><input type="text" name="postal" value=<?php echo $pcod_post; ?>></td>
-                    <td><input type="text" name="telefono" value=<?php echo $ptelf_contacto; ?>></td>
+                    <td><input type="number" name="postal" value=<?php echo $pcod_post; ?>></td>
+                    <td><input type="text" name="telefono" pattern="\+?\d{1,12}" title=?php echo $ptelf_contacto; ?>></td>
                     <td>
                         <select name="enfermedad">
                             <?php

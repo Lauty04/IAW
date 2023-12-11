@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Básico con PHP (PDO)</title>
+    <title>CRUD Básico con PHP (MYSQLiPROCEDURAL)</title>
     <link rel="stylesheet" href="csss/PDO.css">
 </head>
 <body>
@@ -20,7 +20,8 @@
     <?php
     $sql = "SELECT `id_paciente`,`nombre`,`apellido1`,`apellido2`,`f_nacimiento`,`cod_post`,`telf_contacto`,enfermedades.nombre_enfermedad,genero.sexo FROM `paciente` 
     JOIN enfermedades ON paciente.cod_enfermedad=enfermedades.codigo
-    JOIN genero ON paciente.id_genero=genero.id_genero";
+    JOIN genero ON paciente.id_genero=genero.id_genero
+    ORDER BY paciente.id_paciente";
     $result = mysqli_query($conn, $sql);
     if (!$result) {
         die("Error en la consulta: " . mysqli_error($conn));

@@ -53,7 +53,7 @@
 
                     <td><input type="text" name="fecha" placeholder="AAAA-MM-DD"></td>
                     <td><input type="text" name="postal"></td>
-                    <td><input type="text" name="telefono"></td>
+                    <td><input type="text" name="telefono" pattern="\+?\d{1,12}" title="Por favor, ingresa un número válido"></td>
                     <td>
                         <select name="enfermedad">
                             <?php
