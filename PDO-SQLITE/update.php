@@ -131,7 +131,8 @@
                 $enfermedad = $row['codigo'];
             }
         }
-        
+       
+
 
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
